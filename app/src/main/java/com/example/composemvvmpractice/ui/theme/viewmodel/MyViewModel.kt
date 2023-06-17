@@ -16,7 +16,7 @@ class MyViewModel : ViewModel() {
     val currentNumber: StateFlow<Int> get() = _currentNumber
 
     fun increase() {
-     _currentNumber.value += 1
+     _currentNumber.value =  _currentNumber.value.plus(1)
     }
 
     fun decrease() {
